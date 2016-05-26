@@ -6,6 +6,17 @@ op nikmeiser
 
 # Minecraft Game commands
 
+# Change game mode
+/gamemode 2
+
+# Game modes
+0 - Survival mode
+1 - Creative mode
+2 - Adventure mode
+3 - Spectator mode
+
+
+
 # Give nikmeiser 1 head of type player and skin the player with the Cave Spider mob
 /give nikmeiser minecraft:skull 1 3 {SkullOwner:MHF_CaveSpider}
 
