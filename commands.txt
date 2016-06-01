@@ -55,3 +55,14 @@ MHF_OakLog
 MHF_Pumpkin 
 MHF_TNT 
 MHF_TNT2
+
+# Summon commands
+/summon EntityHorse ~0 ~1 ~0 {Tame:1} # Tame horse
+/summon EntityHorse ~0 ~1 ~0 {Type:1,Tame:1} # Tame Donkey
+/summon EntityHorse ~0 ~1 ~0 {Type:3,Tame:1} # Tame Zombie Horse
+/summon EntityHorse ~0 ~1 ~0 {Type:4,Tame:1} # Tame Skeleton Horse
+/summon EntityHorse ~0 ~1 ~0 {Type:0,Tame:1,SaddleItem:{id:329}}  # Tame horse with a saddle
+/summon Pig
+
+# Give yourself a golden apple
+/give @p golden_apple 1 1

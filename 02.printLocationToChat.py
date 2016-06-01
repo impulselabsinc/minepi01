@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+###################################################
+#            Picraft @ Impulse Labs               #
+#           http://www.impulselabs.io             #
+###################################################
+
 # Tell the application which files you are going to use
 # (I want to use a phone to call minecraft television studio)
 import mcpi.minecraft as minecraft
