@@ -290,7 +290,9 @@ letters = {"a":
 
 # constants to position the text lines in minecraft
 #LETTERBLOCKID = block.COBBLESTONE.id
-LETTERBLOCKID = block.STAIRS_WOOD.id
+#LETTERBLOCKID = block.STAIRS_WOOD.id
+#LETTERBLOCKID = block.GLOWSTONE_BLOCK.id
+LETTERBLOCKID = block.BOOKSHELF.id
 LETTERBLOCKDATA = 0
 #These are the lines where the tweets will be written
 TEXTLINES = {0:[[minecraft.Vec3(-95, 55, -95), minecraft.Vec3(+95, 55, -95)],
@@ -385,7 +387,7 @@ class MinecraftText:
             #loop through all the hashes, creating block
             for digit in letterString:
                 if digit == "#":
-                    #print "create block x = " + str(currentPos.x) + " y = " + str(currentPos.y)
+                    #print "create block x = " + str(currentPos.x) + " y = " + str(currentPos.y) + " z = " + str(currentPos.z)
                     self.mc.setBlock(currentPos.x, currentPos.y, currentPos.z, LETTERBLOCKID, LETTERBLOCKDATA)
                     currentPos.x = currentPos.x + xDirection
                     currentPos.z = currentPos.z + zDirection
@@ -424,4 +426,6 @@ if __name__ == "__main__":
 
     #Create minecraft twitter 
     #mcTwitter = MinecraftTwitterStreamClient(getTwitterUserStreamURL())
-        mcNik = nikText('PS 11 minecraft club', 0)
+	mcNik = nikText('PROGRAMMING WITH MINECRAFT', 0)
+	mcNik2 = nikText('     AT IMPULSE LABS', 1)
+
