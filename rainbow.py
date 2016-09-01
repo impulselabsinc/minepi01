@@ -1,10 +1,12 @@
+#!/usr/bin/env python
 import mcpi.minecraft as minecraft
 import mcpi.block as block
+import mcpi.color as color
 from math import *
 
-colors = [14, 1, 4, 5, 3, 11, 10]
+colors = [color.RED, color.ORANGE, color.YELLOW, color.LIME, color.LIGHTBLUE, color.BLUE, color.PURPLE]
 
-mc = minecraft.Minecraft.create("127.0.0.1")
+mc = minecraft.Minecraft.create()
 height = 60
 
 mc.setBlocks(-64,0,0,64,height + len(colors),0,0)
